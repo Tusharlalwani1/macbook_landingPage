@@ -149,10 +149,13 @@ body {
 
     .controls {
       @apply absolute z-50 bottom-40 lg:bottom-40 2xl:bottom-52 left-1/2 -translate-x-1/2;
+      @apply flex flex-col items-center;
 
       .info {
-        @apply text-xs text-white bg-black/20 px-2 py-1 rounded-lg;
+        @apply text-xs text-white bg-black/20 px-2 py-1 rounded-lg mb-5; /* added mb-5 */
       }
+
+      /* REMOVE the .flex-center { @apply gap-5 } block entirely */
 
       .color-control {
         @apply flex-between bg-neutral-800 rounded-full px-6 py-3 gap-4;
